@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  font-family: "Victor Mono", monospace;
+}
+
+.main {
+  background-image: url(../img/background-main.png);
+  background-size: contain;
+  background-repeat: repeat;
+  scroll-behavior: smooth;
+}
+
+.header_main {
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(12, 12, 12);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.767);
+}
+.header_main img {
+  border-radius: 50%;
+  scale: 1.02;
+}
+.header_main figcaption {
+  font-size: 24px;
+  color: rgb(232, 232, 232);
+  font-family: "Saira Condensed", sans-serif;
+}
+.header_main figcaption > span {
+  color: rgb(255, 55, 0);
+  font-size: 26px;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0 4px;
+}
+.header_main li {
+  list-style-type: none;
+}
+.header_main li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+.header_main li a:hover {
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+}
+
+.about_main {
+  background-color: rgb(17, 17, 17);
+  min-height: 80vh;
+  overflow: hidden;
+}
+.about_main div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_main .div_para {
+  min-height: 50vh;
+  overflow: hidden;
+}
+.about_main .div_para svg {
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin: auto;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.about_main .pic_abt {
+  background-image: url(../img/Abut-chart.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 50vh;
+  filter: contrast(87%);
+}
+.about_main h1 {
+  font-size: 24px;
+  color: rgb(232, 232, 232);
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+  height: 20%;
+}
+.about_main h1 > span {
+  color: rgb(255, 55, 0);
+  font-size: 46px;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0 4px;
+}
+.about_main p {
+  font-size: 24px;
+  margin: 0;
+  color: rgb(229, 227, 227);
+  height: 50%;
+  font-family: "Caveat", cursive;
+  font-weight: lighter;
+  position: relative;
+  z-index: 1;
+}
+.about_main .btn_div {
+  height: 30%;
+}
+.about_main .btn {
+  font-size: 12px;
+  height: 30%;
+  margin-top: 7px;
+  position: relative;
+  padding: 4px;
+  z-index: 1;
+  transition: 0.4s;
+  border-radius: 30px;
+  background-color: rgb(76, 222, 76);
+  color: black !important;
+}
+.about_main .btn:hover {
+  background-color: green;
+  scale: 1.04;
+  border: 3px solid white;
+}
+.about_main .btn:hover a {
+  color: white;
+}
+.about_main .btn:active {
+  background-color: red;
+}
+.about_main .btn:active a {
+  color: white;
+}
+.about_main .btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-main {
+  min-height: 100vh;
+  background-color: rgb(17, 17, 17);
+  padding-top: 30px;
+}
+.blog-main h2 {
+  color: white;
+}
+.blog-main .article-box {
+  height: 300px;
+  border-radius: 10px 30px 10px 30px;
+  padding: 8px;
+  margin: 8px 5px;
+  transition: 0.4s;
+  background-color: rgba(44, 75, 56, 0.964);
+  cursor: pointer;
+}
+.blog-main .article-box:nth-of-type(even) {
+  background-color: rgb(24, 21, 70);
+}
+.blog-main .article-box:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.77);
+  background-color: rgba(27, 70, 6, 0.964);
+}
+.blog-main .article-box:nth-of-type(even):hover {
+  background-color: rgb(12, 12, 40);
+}
+.blog-main .article-box:hover img {
+  scale: 1.04;
+  filter: grayscale(0%);
+}
+.blog-main .article-box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 30px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  filter: grayscale(100%) contrast(120%);
+}
+.blog-main .article-box span {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+}
+.blog-main .article-box p {
+  color: rgb(134, 134, 134);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.contact-main {
+  min-height: 70vh;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-main h2 {
+  color: white;
+}
+.contact-main .contact-pic {
+  min-height: 70vh;
+  background-image: url(../img/—Pngtree—color\ figure\ gold\ coin\ atm_6838507.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-main .contact-info {
+  min-height: 70vh;
+  margin-top: 20px;
+  padding: 20px;
+}
+.contact-main .contact-info h4 {
+  color: white;
+}
+.contact-main .contact-info h4:nth-of-type(1) {
+  font-size: 40px;
+  color: rgb(0, 213, 0);
+  font-weight: bold;
+  position: relative;
+}
+.contact-main .contact-info h4:nth-of-type(1)::after {
+  width: 100%;
+  height: 3px;
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  background-color: red;
+}
+.contact-main .contact-info h4 > a {
+  text-decoration: none;
+  color: rgb(144, 144, 144);
+  transition: 2s;
+}
+.contact-main .contact-info h4 > a:hover {
+  color: yellow;
+}
+.contact-main .contact-info > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 40px;
+  transition: 1s;
+}
+.contact-main .contact-info > a:nth-of-type(1):hover {
+  color: rgb(13, 97, 214);
+  transform: rotateZ(25deg);
+}
+.contact-main .contact-info > a:nth-of-type(2):hover {
+  color: rgb(183, 19, 183);
+  transform: rotateZ(25deg);
+}
+.contact-main .contact-info > a:nth-of-type(3):hover {
+  color: rgb(1, 91, 170);
+  transform: rotateZ(25deg);
+}
+
+footer {
+  background-color: black;
+  font-size: 13px;
+}
+footer a {
+  text-decoration: none;
+  color: yellow;
+  text-transform: capitalize;
+}/*# sourceMappingURL=master.css.map */

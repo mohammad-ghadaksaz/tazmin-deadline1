@@ -1,0 +1,179 @@
+body {
+
+    // https://demo.neontheme.com/
+
+
+    font-family: 'Ubuntu', sans-serif;
+
+
+    //header start 
+
+    header {
+        height: 90px;
+        border-bottom: 1px solid rgb(189, 188, 188);
+
+        figure {
+            img {
+                object-fit: cover;
+                height: 60%;
+                cursor: pointer;
+                border-radius: 50%;
+                margin-right: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+
+                @media screen and (max-width: 768px) {
+                    height: 55% !important;
+                }
+
+                @media screen and (min-width: 993px) {
+                    height: 60% !important;
+                }
+            }
+
+            figcaption {
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+
+        span {
+            cursor: pointer;
+
+            &:nth-of-type(1)>i::after {
+                background-color: rgb(0, 94, 255);
+                content: '5';
+            }
+
+            &:nth-of-type(2)>i::after {
+                background-color: rgb(203, 41, 41);
+                content: '1';
+            }
+
+            &:nth-of-type(3)>i::after {
+                background-color: rgb(186, 186, 2);
+                content: '10';
+            }
+
+            >i {
+                font-size: 22px;
+                color: rgb(112, 112, 112);
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    width: 90%;
+                    height: 51%;
+                    border-radius: 50%;
+                    // border: 1px solid red ;
+                    top: -4%;
+                    right: -20%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+
+        .second_head,
+        .second_head2{
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: bolder;
+            >i{
+                font-size: 20px;
+            }
+            &:nth-of-type(1){
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    // border: 1px solid red ;
+                    background-color: green;
+                    content: '3';
+                    top: 10%;
+                    right: -35%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+            
+        }
+
+        .second_head2{
+            >i{
+                font-size: 17px !important;
+            }
+        }
+    }
+}
+
+//header end
+
+//view start
+
+.box_view{
+    border-radius: 20px;
+    height: 160px;
+    &:nth-of-type(1){
+        background-color: rgb(245,105,84);
+    }
+    &:nth-of-type(2){
+        background-color: rgb(0,166,90);
+    }
+    &:nth-of-type(3){
+        background-color: rgb(0,192,239);
+    }
+    &:nth-of-type(4){
+        background-color: rgb(0,115,183);
+    }
+    >span{
+        font-size: 33px;
+        color: white;
+        font-weight: bolder;
+    }
+    >P{
+        text-transform: capitalize;
+        font-size: 12px;
+        color: white;
+    }
+    >h3{
+        font-size: 17px;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+//chart start
+.chart_main{
+    margin-top: 70px;
+    // border: 2px solid gray;
+    .chart_sec{
+        // border: 1px solid red;
+        .chart_div{
+            overflow-x:auto;
+        }
+    }
+
+}
+.info{
+    h1{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 17px;
+        align-items: start;
+    }
+}

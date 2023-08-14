@@ -1,0 +1,148 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+body header {
+  height: 90px;
+  border-bottom: 1px solid rgb(189, 188, 188);
+}
+body header figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 768px) {
+  body header figure img {
+    height: 55% !important;
+  }
+}
+@media screen and (min-width: 993px) {
+  body header figure img {
+    height: 60% !important;
+  }
+}
+body header figure figcaption {
+  font-size: 15px;
+  font-weight: bold;
+}
+body header span {
+  cursor: pointer;
+}
+body header span:nth-of-type(1) > i::after {
+  background-color: rgb(0, 94, 255);
+  content: "5";
+}
+body header span:nth-of-type(2) > i::after {
+  background-color: rgb(203, 41, 41);
+  content: "1";
+}
+body header span:nth-of-type(3) > i::after {
+  background-color: rgb(186, 186, 2);
+  content: "10";
+}
+body header span > i {
+  font-size: 22px;
+  color: rgb(112, 112, 112);
+  position: relative;
+}
+body header span > i::after {
+  position: absolute;
+  width: 90%;
+  height: 51%;
+  border-radius: 50%;
+  top: -4%;
+  right: -20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+body header .second_head,
+body header .second_head2 {
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+body header .second_head > i,
+body header .second_head2 > i {
+  font-size: 20px;
+}
+body header .second_head:nth-of-type(1),
+body header .second_head2:nth-of-type(1) {
+  position: relative;
+}
+body header .second_head:nth-of-type(1)::after,
+body header .second_head2:nth-of-type(1)::after {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  content: "3";
+  top: 10%;
+  right: -35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+body header .second_head2 > i {
+  font-size: 17px !important;
+}
+
+.box_view {
+  border-radius: 20px;
+  height: 160px;
+}
+.box_view:nth-of-type(1) {
+  background-color: rgb(245, 105, 84);
+}
+.box_view:nth-of-type(2) {
+  background-color: rgb(0, 166, 90);
+}
+.box_view:nth-of-type(3) {
+  background-color: rgb(0, 192, 239);
+}
+.box_view:nth-of-type(4) {
+  background-color: rgb(0, 115, 183);
+}
+.box_view > span {
+  font-size: 33px;
+  color: white;
+  font-weight: bolder;
+}
+.box_view > P {
+  text-transform: capitalize;
+  font-size: 12px;
+  color: white;
+}
+.box_view > h3 {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+
+.chart_main {
+  margin-top: 70px;
+}
+.chart_main .chart_sec .chart_div {
+  overflow-x: auto;
+}
+
+.info h1 {
+  font-size: 40px;
+}
+.info h4 {
+  font-size: 17px;
+  align-items: start;
+}/*# sourceMappingURL=master.css.map */

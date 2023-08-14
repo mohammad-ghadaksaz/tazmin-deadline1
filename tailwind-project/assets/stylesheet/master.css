@@ -1,0 +1,401 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.pic_contain {
+  background-image: url(../img/slider52x.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+}
+.pic_contain::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.352);
+}
+
+.Head_Text h5 {
+  font-size: 24px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.Head_Text span {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .Head_Text span {
+    font-size: 60px;
+  }
+}
+.Head_Text p {
+  font-size: 23px;
+  color: rgb(139, 139, 139);
+  font-family: "Borel", cursive;
+}
+.Head_Text button {
+  transform: translateX(150%) translateY(40%);
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-family: "Montserrat", sans-serif;
+}
+.Head_Text button:hover {
+  background-color: rgb(61, 61, 61);
+  text-shadow: 0px 0px 3px white;
+  box-shadow: 0px 0px 2px 3px white;
+}
+
+header .nav_bar > ul > li {
+  font-family: "Montserrat", sans-serif;
+}
+header .nav_bar > ul > li:hover > a {
+  color: gray;
+  text-shadow: 0px 0px 1px white;
+}
+header .nav_bar > ul > li:hover > .sub_menu1 {
+  opacity: 1;
+  visibility: visible;
+}
+header .nav_bar > ul > li > a {
+  font-weight: bold;
+  transition: 0.4s;
+}
+header .nav_bar > ul > li > a > i {
+  padding-left: 2px;
+}
+header .nav_bar > ul > li > .sub_menu1 {
+  background-color: rgb(22, 22, 22);
+  -webkit-backdrop-filter: blur(400px);
+          backdrop-filter: blur(400px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+header .nav_bar > ul > li > .sub_menu1 > li {
+  border-radius: 10px;
+}
+header .nav_bar > ul > li > .sub_menu1 > li > h3 {
+  position: relative;
+  z-index: 5;
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
+}
+header .nav_bar > ul > li > .sub_menu1 > li > span {
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(1) {
+  background-image: url(../img/submenu-main.avif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(1)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.648);
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(2) {
+  background-image: url(../img/sub-desert.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(2)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.648);
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(3) {
+  background-image: url(../img/appetizersub.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header .nav_bar > ul > li > .sub_menu1 > li:nth-of-type(3)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.648);
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sec_section img {
+  border-radius: 10px;
+}
+.sec_section div {
+  overflow: hidden;
+}
+.sec_section div p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+.sec_section div p:nth-of-type(2) {
+  font-size: 17px;
+}
+@media screen and (max-width: 992px) {
+  .sec_section div p {
+    font-size: 14px;
+  }
+  .sec_section div p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 17px;
+  }
+}
+.sec_section div h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  padding-top: 10px;
+  margin-top: 12px;
+}
+@media screen and (max-width: 992px) {
+  .sec_section div h2 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+.third_sec > div:nth-of-type(1) > .pic_div {
+  background-image: url(../img/PngItem_1074341.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.third_sec > div:nth-of-type(2) > .pic_div {
+  background-image: url(../img/PngItem_2792883.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.third_sec > div:nth-of-type(3) > .pic_div {
+  background-image: url(../img/PngItem_1520122.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.third_sec > div h2 {
+  font-size: 19px;
+}
+.third_sec > div p {
+  font-size: 12px;
+}
+.third_sec > div .btn {
+  width: 50%;
+  height: 30px;
+  font-size: 10px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.third_sec > div .btn:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.fourth_sec {
+  overflow: hidden;
+}
+.fourth_sec .pic_food {
+  background-image: url(../img/fourthsection.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.fourth_sec .pic_food::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.352);
+}
+.fourth_sec .div_text_four {
+  padding: 40px;
+  overflow: hidden;
+}
+.fourth_sec h5 {
+  font-size: 24px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 5px;
+  margin-left: 3px;
+}
+.fourth_sec span {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  margin-left: 3px;
+}
+@media screen and (max-width: 768px) {
+  .fourth_sec span {
+    font-size: 60px;
+  }
+}
+.fourth_sec p {
+  font-size: 23px;
+  padding: 5px;
+  margin-left: 3px;
+  color: rgb(139, 139, 139);
+  font-family: "Borel", cursive;
+  text-overflow: ellipsis;
+}
+
+#menu {
+  padding: 10px;
+  margin-top: 20px;
+}
+#menu .maincourse {
+  background-color: rgb(223, 223, 223);
+  background-image: url(../img/fourthsection.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transform: translateY(50px);
+}
+#menu .maincourse::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.759);
+}
+@media screen and (max-width: 992px) {
+  #menu .maincourse {
+    transform: translateY(0);
+  }
+}
+#menu .maincourse h2 {
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  z-index: 1;
+}
+#menu .maincourse ._food {
+  z-index: 1;
+  padding: 10px;
+}
+#menu .maincourse ._food > h4 {
+  color: wheat;
+  font-weight: bold;
+}
+#menu .maincourse ._food p {
+  color: white;
+}
+#menu .maincourse ._food h5 {
+  color: white;
+  font-weight: bold;
+}
+#menu .deserts {
+  background-color: rgb(10, 5, 85);
+  margin-top: 10px;
+}
+#menu .deserts h2 {
+  color: white;
+  font-size: 19px;
+}
+#menu .deserts ._food {
+  padding: 10px;
+}
+#menu .deserts ._food > h4 {
+  color: white;
+}
+#menu .deserts ._food p {
+  color: rgb(162, 160, 160);
+}
+#menu .deserts ._food h5 {
+  color: white;
+  font-weight: bold;
+}
+#menu .appitizer {
+  background-color: rgb(223, 223, 223);
+  transform: translateY(80px);
+  margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  #menu .appitizer {
+    transform: translateY(0);
+  }
+}
+#menu .appitizer h2 {
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+#menu .appitizer ._food {
+  padding: 10px;
+}
+#menu .appitizer ._food > h4 {
+  color: rgb(29, 29, 29);
+}
+#menu .appitizer ._food p {
+  color: rgb(0, 0, 0);
+}
+#menu .appitizer ._food h5 {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.six_sec {
+  background-image: url(../img/slider52x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.six_sec::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.759);
+}
+.six_sec > div {
+  z-index: 5;
+}
+.six_sec p {
+  z-index: 5;
+  font-size: 20px;
+  color: white !important;
+  padding: 10px;
+}
+.six_sec a {
+  color: white;
+  width: 20%;
+  font-size: 30px;
+  transition: 0.4s;
+  height: 100%;
+  transform: translateX(20px);
+}
+.six_sec a:hover {
+  font-size: 35px;
+}/*# sourceMappingURL=master.css.map */

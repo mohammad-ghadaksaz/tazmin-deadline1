@@ -1,0 +1,443 @@
+body{
+    scroll-behavior: smooth;
+}
+.pic_contain {
+    background-image: url(../img/slider52x.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.352);
+    }
+}
+
+.Head_Text {
+    h5 {
+        font-size: 24px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    span {
+        font-size: 80px;
+        font-family: 'Montserrat', sans-serif;
+        @media screen and (max-width:768px) {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        font-size: 23px;
+        color: rgb(139, 139, 139);
+        font-family: 'Borel', cursive;
+    }
+
+    button {
+        transform: translateX(150%) translateY(40%);
+        border-radius: 10px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            background-color: rgb(61, 61, 61);
+            text-shadow: 0px 0px 3px white;
+            box-shadow: 0px 0px 2px 3px white;
+        }
+    }
+}
+
+header {
+    .nav_bar {
+        >ul {
+            >li {
+                font-family: 'Montserrat', sans-serif;
+
+                &:hover {
+                    >a {
+                        color: gray;
+                        text-shadow: 0px 0px 1px white;
+                    }
+
+                    >.sub_menu1 {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+                >a {
+                    font-weight: bold;
+                    transition: .4s;
+
+                    >i {
+                        padding-left: 2px;
+                    }
+                }
+
+                >.sub_menu1 {
+                    background-color: rgb(22, 22, 22);
+                    backdrop-filter: blur(400px);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .6s;
+                    border-radius: 10px;
+
+                    >li {
+                        border-radius: 10px;
+
+                        >h3 {
+                            position: relative;
+                            z-index: 5;
+                            font-size: 40px;
+                            font-family: 'Crimson Text', serif;
+                        }
+
+                        >span {
+                            position: relative;
+                            z-index: 5;
+                            cursor: pointer;
+                        }
+
+                        &:nth-of-type(1) {
+                            background-image: url(../img/submenu-main.avif);
+                            background-position: center;
+                            background-size: cover;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.648);
+                                z-index: 4;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            background-image: url(../img/sub-desert.jpeg);
+                            background-position: center;
+                            background-size: cover;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.648);
+                                z-index: 4;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            background-image: url(../img/appetizersub.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.648);
+                                z-index: 4;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec_section {
+    img {
+        border-radius: 10px;
+    }
+
+    div {
+        overflow: hidden;
+        p {
+            font-size: 20px;
+            text-align: justify;
+            font-family: 'Montserrat', sans-serif;
+            &:nth-of-type(2){
+                font-size: 17px;
+            }
+            @media screen and (max-width:992px) {
+                font-size: 14px;
+                &:nth-of-type(2){
+                    font-size: 12px;
+                    margin-top: 17px;
+                }
+            }
+        }
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Crimson Text', serif;
+            padding-top: 10px;
+            margin-top: 12px;
+            @media screen and (max-width:992px) {
+                font-size: 20px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+.third_sec{
+    >div{
+        &:nth-of-type(1){
+            >.pic_div{
+                background-image: url(../img/PngItem_1074341.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:nth-of-type(2){
+            >.pic_div{
+                background-image: url(../img/PngItem_2792883.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:nth-of-type(3){
+            >.pic_div{
+                background-image: url(../img/PngItem_1520122.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        h2{
+            font-size: 19px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .btn{
+            width: 50%;
+            height: 30px;
+            font-size: 10px; 
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            border-radius: 10px;
+            transition: .4s;
+            &:hover{
+                background-color: black;
+                border: 1px solid white;
+                color: white;
+            }
+        }
+    }
+}
+
+.fourth_sec{
+    overflow: hidden;
+    .pic_food{
+        background-image: url(../img/fourthsection.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.352);
+        }
+
+    }
+    .div_text_four{
+        padding: 40px;
+        overflow: hidden;
+    }
+    h5 {
+        font-size: 24px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        padding: 5px;
+        margin-left: 3px;
+    }
+
+    span {
+        font-size: 80px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        margin-left: 3px;
+        @media screen and (max-width:768px) {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        font-size: 23px;
+        padding: 5px;
+        margin-left: 3px;
+        color: rgb(139, 139, 139);
+        font-family: 'Borel', cursive;
+        text-overflow: ellipsis;
+    }
+}
+
+//menu
+
+#menu{
+    padding: 10px;
+    margin-top: 20px;
+    .maincourse{
+        background-color: rgb(223, 223, 223);
+        background-image: url(../img/fourthsection.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;left: 0;
+            background-color: rgba(0, 0, 0, 0.759);
+        }
+        transform: translateY(50px);
+        @media screen and (max-width:992px) {
+            transform: translateY(0);
+        }
+        h2{
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            z-index: 1;
+        }
+        ._food{
+            z-index: 1;
+            // border-bottom: 1px solid gray;
+            padding: 10px;
+            >h4{
+                color: wheat;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+            }
+            h5{
+                color: white;
+                font-weight: bold;
+                
+            }
+        }
+    }
+    .deserts{
+        background-color: rgb(10, 5, 85);
+        margin-top: 10px;
+        h2{
+            color: white;
+            font-size: 19px;
+        }
+        ._food{
+            // border-bottom: 1px solid gray;
+            padding: 10px;
+            >h4{
+                color: white;
+            }
+            p{
+                color: rgb(162, 160, 160);
+            }
+            h5{
+                color: white;
+                
+                font-weight: bold;
+            }
+        }
+    }
+    .appitizer{
+        background-color: rgb(223, 223, 223);
+        transform: translateY(80px);
+        margin-top: 10px;
+        @media screen and (max-width:992px) {
+            transform: translateY(0);
+        }
+        h2{
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+        }
+        ._food{
+            // border-bottom: 1px solid gray;
+            padding: 10px;
+            >h4{
+                color: rgb(29, 29, 29);
+            }
+            p{
+                color: rgb(0, 0, 0);
+            }
+            h5{
+                color: rgb(51, 51, 51);
+                font-weight: bold;
+                
+            }
+        }
+    }
+}
+
+//6th sec
+
+.six_sec{
+    background-image: url(../img/slider52x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.759);
+    }
+    >div{
+        z-index: 5;
+    }
+    p{
+        z-index: 5;
+        font-size: 20px;
+        color: white !important;
+        padding: 10px;
+    }
+    a{
+        color: white;
+        width: 20%;
+        font-size: 30px;
+        transition: .4s;
+        height: 100%;
+        transform: translateX(20px);
+        &:hover{
+            font-size: 35px;
+        }
+    }
+}
